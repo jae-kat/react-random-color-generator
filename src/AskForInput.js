@@ -1,3 +1,4 @@
+/*
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
@@ -30,3 +31,4 @@ export default function AskForInput() {
     </div>
   );
 }
+*/
