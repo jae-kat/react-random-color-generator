@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
-//css-in-js to style the page
+// css-in-js to style the page
 
 const Fragment = styled.div`
   display: flex;
@@ -15,7 +15,6 @@ const Div = styled.div`
   border-radius: 30px;
   border: 3px solid black;
   margin-top: 5%;
-  transition-property: {backgroundColor};
   transition-duration: 1s;
 `;
 const Button = styled.button`
@@ -37,14 +36,14 @@ export default function App() {
 
   return (
     <Fragment>
-      <Div
+      <Div // this is the colored div
         style={{
           backgroundColor: backgroundColor,
         }}
       >
         Generated Color: {backgroundColor}
       </Div>
-      <Button
+      <Button // the Generate button
         onClick={() =>
           setBackgroundColor(() =>
             randomColor({ hue: hue, luminosity: luminosity }),
